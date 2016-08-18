@@ -52,6 +52,11 @@ class ItemData<T> implements Comparable<ItemData> {
     }
 
     @Override
+    public int hashCode() {
+        return data.hashCode();
+    }
+
+    @Override
     public String toString() {
         return String.format("Item data: title - %s, width - %f", data.toString(), width);
     }
